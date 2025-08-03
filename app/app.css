@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@import "@fontsource/titan-one";
+@import "@fontsource/poppins/300.css";
+@import "@fontsource/poppins/200.css";
+@import "@fontsource/poppins/200-italic.css";
+@import "@fontsource/share-tech-mono";
+@import "@fontsource/pinyon-script";
+
+@theme {
+  --color-black: #1b1b1b;
+  --color-white: #ededed;
+  --color-lighter-black: #2a2a2a;
+  --color-darker-white: #e1e1e1;
+  --color-real-black: #000000;
+  --color-real-white: #ffffff;
+  --font-header: "Titan One", sans-serif;
+  --font-secondary: "Share Tech Mono", monospace;
+  --font-regular: "Poppins", sans-serif;
+  --font-script: "Pinyon Script";
+  --padding-vertical: calc(var(--spacing) * 4);
+  --padding-horizontal: calc(var(--spacing) * 8);
+}
+
+html,
+body {
+  @apply scroll-smooth bg-black text-white;
+}
+
+/* Effects */
+.hover-underline::after {
+  content: "";
+  display: block;
+  transform: scaleX(0%);
+  border-bottom: 2px solid var(--color-white);
+  transition-duration: 200ms;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(100%);
+}
+
+.hover-underline-dark::after {
+  border-bottom: 2px solid var(--color-black);
+}
+
+.hover-underline-inverted::after {
+  transform: scaleX(100%);
+}
+
+.hover-underline-inverted:hover::after {
+  transform: scaleX(0%);
+}
+
+.glassmorphism {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* Utility */
+.global-padding {
+  padding-block: var(--padding-vertical);
+  padding-inline: var(--padding-horizontal);
+}
+
+.grid-image {
+  content-visibility: auto;
+}
