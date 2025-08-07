@@ -98,7 +98,6 @@ export default function Home() {
             isLast={i === projects.length - 1}
           ></ProjectCard>
         ))}
-        {/* <div className="h-screen" /> */}
       </section>
 
       {/* About Me Section */}

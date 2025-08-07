@@ -1,7 +1,7 @@
 import {
   isRouteErrorResponse,
+  Link,
   Links,
-  Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
@@ -65,7 +65,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
     message = error.status === 404 ? "404" : "Error";
     details =
       error.status === 404
-        ? "The requested page could not be found."
+        ? "Looks like you're lost."
         : error.statusText || details;
   } else if (import.meta.env.DEV && Boolean(error) && error instanceof Error) {
     details = error.message;
@@ -73,14 +73,21 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <main className="container mx-auto p-4 pt-16">
-      <h1>{message}</h1>
-      <p>{details}</p>
+    <main className="container mx-auto flex h-screen flex-col items-center justify-center p-4 pt-16">
+      <h1 className="font-header text-5xl lg:text-8xl">{message}</h1>
+      <p className="font-secondary text-xl lg:text-3xl">{details}</p>
       {stack != null && (
-        <pre className="w-full overflow-x-auto p-4">
+        <pre className="font-regular w-full overflow-x-auto p-4">
           <code>{stack}</code>
         </pre>
       )}
+      <p className="font-regular">
+        Go back{" "}
+        <Link to={"/"} className="border-b-2 hover:border-b-0">
+          home
+        </Link>
+        .
+      </p>
     </main>
   );
 }
