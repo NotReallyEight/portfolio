@@ -56,7 +56,7 @@ export default function Project({ loaderData }: Route.ComponentProps) {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
-          className="mx-auto my-8 aspect-video w-2/3"
+          className="mx-auto my-8 aspect-video w-full p-4 lg:w-2/3 lg:p-0"
         />
       )}
 
