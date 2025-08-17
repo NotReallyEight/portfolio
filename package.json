@@ -17,7 +17,7 @@
     "@fontsource/share-tech-mono": "^5.2.6",
     "@fontsource/titan-one": "^5.2.6",
     "@gsap/react": "^2.1.2",
-    "@react-router/node": "^7.7.1",
+    "@react-router/node": "^7.8.1",
     "@react-router/serve": "^7.7.1",
     "gsap": "^3.13.0",
     "isbot": "^5.1.27",
