@@ -25,6 +25,11 @@ let projects: {
     redirectLink: "/projects/agropoli-street-2025",
   },
   {
+    name: "Napoli Street Photography \\\\ 2025",
+    imageUrl: "/optimized/napoli-street-2025/7Q5A5091.webp",
+    redirectLink: "/projects/napoli-street-2025",
+  },
+  {
     name: "Erebus - Discord API Wrapper \\\\ 2021",
     imageUrl: "/optimized/coding-project-thumbnails/erebus.webp",
     redirectLink: "https://erebus.js.org/",
