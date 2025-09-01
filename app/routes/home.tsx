@@ -20,6 +20,11 @@ let projects: {
     redirectLink: "/projects/salerno-street-photography-2025",
   },
   {
+    name: "Soggetti Erotici - Ah Ah Ah (Music Video) \\\\ 2025",
+    imageUrl: "/optimized/sogg-erotici-ah-ah-ah-2025/thumbnail.webp",
+    redirectLink: "/projects/sogg-erotici-ah-ah-ah-2025",
+  },
+  {
     name: "Agropoli Street Photography \\\\ 2025",
     imageUrl: "/optimized/agropoli-street-2025/_DSC0001.webp",
     redirectLink: "/projects/agropoli-street-2025",

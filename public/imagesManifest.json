@@ -2,7 +2,6 @@
   "agropoli-street-2025": {
     "id": "agropoli-street-2025",
     "name": "Agropoli Street Photography \\\\ 2025",
-    "description": "",
     "images": [
       "_DSC0001.webp",
       "_DSC0004.webp",
@@ -19,17 +18,15 @@
       "_DSC0039.webp",
       "_DSC0042.webp"
     ],
-    "youtubeVideo": ""
+    "galleryVisible": true
   },
   "coding-project-thumbnails": {
     "id": "coding-project-thumbnails",
-    "name": "",
-    "description": "",
     "images": [
       "atn-modmail.webp",
       "erebus.webp"
     ],
-    "youtubeVideo": ""
+    "galleryVisible": true
   },
   "gita-liguria-costa-azzurra-2025": {
     "id": "gita-liguria-costa-azzurra-2025",
@@ -152,12 +149,12 @@
       "J55C4914.webp",
       "J55C4917.webp"
     ],
-    "youtubeVideo": "https://www.youtube.com/embed/xhNAQp0Vhrg?si=xklgaguRx5BHBCBn"
+    "youtubeVideo": "https://www.youtube.com/embed/xhNAQp0Vhrg?si=xklgaguRx5BHBCBn",
+    "galleryVisible": true
   },
   "napoli-street-2025": {
     "id": "napoli-street-2025",
     "name": "Napoli Street Photography \\\\ 2025",
-    "description": "",
     "images": [
       "20250425_160653.webp",
       "7Q5A5090.webp",
@@ -197,19 +194,16 @@
       "BD1A6320.webp",
       "BD1A6321.webp"
     ],
-    "youtubeVideo": ""
+    "galleryVisible": true
   },
   "optimized": {
     "id": "optimized",
-    "name": "",
-    "description": "",
     "images": [],
-    "youtubeVideo": ""
+    "galleryVisible": true
   },
   "salerno-street-photography-2025": {
     "id": "salerno-street-photography-2025",
     "name": "Salerno Street Photography \\\\ 2025",
-    "description": "",
     "images": [
       "20250310_134008(0).webp",
       "20250310_134521 (2).webp",
@@ -282,6 +276,16 @@
       "J55C4398.webp",
       "J55C4400.webp"
     ],
-    "youtubeVideo": ""
+    "galleryVisible": true
+  },
+  "sogg-erotici-ah-ah-ah-2025": {
+    "id": "sogg-erotici-ah-ah-ah-2025",
+    "name": "Soggetti Erotici - Ah Ah Ah (Music Video) \\\\ 2025",
+    "description": "In April, I worked as Assistant Director on the music video \\\"Ah Ah Ah\\\" by Soggetti Erotici. It was my first experience on a video set, where I focused on learning as much as possible in a challenging yet highly motivating environment.",
+    "images": [
+      "thumbnail.webp"
+    ],
+    "youtubeVideo": "https://www.youtube.com/embed/KWAXNLzGk9g?si=ZdjqpJMNV8hZkh8_",
+    "galleryVisible": false
   }
 }
