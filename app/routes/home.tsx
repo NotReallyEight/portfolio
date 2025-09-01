@@ -111,7 +111,7 @@ export default function Home() {
           <div className="flex h-screen w-3/4 flex-col items-center space-y-4 gap-x-8 py-8 lg:grid lg:h-2/3 lg:w-2/3 lg:grid-cols-[1fr_2fr]">
             <div className="h-full w-full overflow-hidden">
               <img
-                alt="Antonio Wang Image"
+                alt="Antonio Wang"
                 src="/about-me-image.jpg"
                 className="h-full w-full object-cover"
                 loading="lazy"
@@ -122,11 +122,12 @@ export default function Home() {
                 About Me
               </div>
               <div className="font-regular text-center text-base font-light lg:text-left lg:text-xl">
-                Hi, I'm Antonio Wang — I write code by day and chase light with
-                a camera by… also day. I'm 18 and obsessed with building things
-                that work and look good. When I'm not coding, I'm probably out
-                framing strangers like characters in a story — freezing time at
-                1/160th of a second, one shot at a time.
+                Hi, I&apos;m Antonio Wang — I write code by day and chase light
+                with a camera by… also day. I&apos;m 18 and obsessed with
+                building things that work and look good. When I&apos;m not
+                coding, I&apos;m probably out framing strangers like characters
+                in a story — freezing time at 1/160th of a second, one shot at a
+                time.
               </div>
             </div>
           </div>

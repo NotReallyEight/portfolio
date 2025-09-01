@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
-import gsap from "gsap";
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function ProjectCard(props: {
@@ -39,7 +39,7 @@ export default function ProjectCard(props: {
       >
         <div className="h-full w-full overflow-hidden">
           <img
-            alt="Project cover image"
+            alt="Project cover"
             src={props.imageUrl}
             className="h-full w-full object-cover"
           ></img>
