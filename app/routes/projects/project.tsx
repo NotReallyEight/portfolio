@@ -66,7 +66,7 @@ export default function Project({ loaderData }: Route.ComponentProps) {
           <img
             key={image}
             src={`/optimized/${loaderData.id}/${image}`}
-            alt={`Image of ${loaderData.name}`}
+            alt={loaderData.name}
             loading="lazy"
             className="mb-4 w-full"
           />
