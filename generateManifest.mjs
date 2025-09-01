@@ -14,8 +14,18 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-const prompt = (question) =>
-  new Promise((resolve) => rl.question(question, resolve));
+const prompt = (question, placeholder) =>
+  new Promise((resolve) =>
+    rl.question(question, (answer) =>
+      resolve(
+        answer.trim() === ""
+          ? placeholder
+          : typeof placeholder === "boolean"
+            ? answer === "true"
+            : answer
+      )
+    )
+  );
 
 const isImage = (filename) => /\.(jpe?g|png|webp|gif)$/i.test(filename);
 
@@ -39,6 +49,10 @@ const main = async () => {
     const name = await prompt(`Project "${id}" name: `);
     const description = await prompt(`Project "${id}" description: `);
     const youtubeVideo = await prompt(`Project "${id}" YouTube video URL: `);
+    const galleryVisible = await prompt(
+      `Should project "${id}"'s gallery be visible? `,
+      true
+    );
 
     manifest[id] = {
       id,
@@ -46,6 +60,7 @@ const main = async () => {
       description,
       images,
       youtubeVideo,
+      galleryVisible,
     };
   }
 
