@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "portfolio-redesign-mark-iii",
   "private": true,
   "type": "module",
@@ -9,7 +9,7 @@
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "prettier": "prettier app/**/*.{ts,tsx,css} --write --cache",
-    "lint": "eslint app --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint app --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --concurrency=auto --cache",
     "prepare": "node resizeImages.js"
   },
   "dependencies": {
