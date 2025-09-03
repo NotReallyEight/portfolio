@@ -69,7 +69,11 @@ export default function Project({ loaderData }: Route.ComponentProps) {
           const src = `/optimized/${loaderData.id}/${image}`;
 
           return (
-            <a key={image} href={src}>
+            <a
+              key={image}
+              href={src}
+              aria-label={`View full image of ${loaderData.name} gallery image`}
+            >
               <img
                 src={src}
                 alt={loaderData.name}
