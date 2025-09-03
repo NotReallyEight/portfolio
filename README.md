@@ -2,7 +2,7 @@
 
 A website made to showcase all the projects and experiences of Antonio Wang through a modern UI.
 
-## Getting started
+## Getting Started
 
 ### Installation
 
