@@ -65,15 +65,24 @@ export default function Project({ loaderData }: Route.ComponentProps) {
       <div
         className={`columns-2 gap-4 space-y-4 px-4 md:columns-3 lg:columns-4 ${loaderData["galleryVisible"] ? "" : "hidden"}`}
       >
-        {loaderData.images.map((image) => (
-          <img
-            key={image}
-            src={`/optimized/${loaderData.id}/${image}`}
-            alt={loaderData.name}
-            loading="lazy"
-            className="mb-4 w-full"
-          />
-        ))}
+        {loaderData.images.map((image) => {
+          const src = `/optimized/${loaderData.id}/${image}`;
+
+          return (
+            <a
+              key={image}
+              href={src}
+              aria-label={`View full image of ${loaderData.name} gallery image`}
+            >
+              <img
+                src={src}
+                alt={loaderData.name}
+                loading="lazy"
+                className="mb-4 w-full"
+              />
+            </a>
+          );
+        })}
       </div>
 
       <Footer />
