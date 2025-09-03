@@ -22,7 +22,7 @@ npm run dev
 
 The application will be available at `http://localhost:5173`.
 
-### Update the manifest
+### Update the Manifest
 
 The image manifest is required to display correctly all projects in the portfolio. Update it with the command:
 
