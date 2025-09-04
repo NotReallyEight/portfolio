@@ -1,6 +1,7 @@
 // @ts-check
 
 import eslint from "@eslint/js";
+import { defineConfig } from "eslint/config";
 import tseslint from "typescript-eslint";
 import react from "eslint-plugin-react";
 import reactRefresh from "eslint-plugin-react-refresh";
@@ -8,7 +9,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 import jsxA11Y from "eslint-plugin-jsx-a11y";
 import _import from "eslint-plugin-import";
 
-export default tseslint.config(
+export default defineConfig(
   eslint.configs.recommended,
   tseslint.configs.recommended,
   react.configs.flat.recommended,
