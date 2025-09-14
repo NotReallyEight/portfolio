@@ -13,7 +13,7 @@
     "prepare": "node resizeImages.js"
   },
   "dependencies": {
-    "@fontsource/pinyon-script": "^5.2.6",
+    "@fontsource/pinyon-script": "^5.2.7",
     "@fontsource/poppins": "^5.2.6",
     "@fontsource/share-tech-mono": "^5.2.6",
     "@fontsource/titan-one": "^5.2.7",
