@@ -66,10 +66,6 @@ body {
   content-visibility: auto;
 }
 
-.hide-scrollbar {
-  scrollbar-width: none;
-}
-
 .pin-spacer {
   width: auto !important;
 }
