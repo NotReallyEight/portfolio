@@ -63,7 +63,7 @@ export default function Project({ loaderData }: Route.ComponentProps) {
 
       {/* Image Grid */}
       <div
-        className={`columns-2 gap-4 space-y-4 px-4 md:columns-3 lg:columns-4 ${loaderData["galleryVisible"] ? "" : "hidden"}`}
+        className={`columns-2 gap-4 mb-4 space-y-4 px-4 md:columns-3 lg:columns-4 ${loaderData["galleryVisible"] ? "" : "hidden"}`}
       >
         {loaderData.images.map((image) => {
           const src = `/optimized/${loaderData.id}/${image}`;
