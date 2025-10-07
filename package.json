@@ -23,7 +23,7 @@
     "gsap": "^3.13.0",
     "isbot": "^5.1.31",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",
     "react-router": "^7.7.1",
     "sharp": "^0.34.4"
@@ -35,7 +35,7 @@
     "@tailwindcss/vite": "^4.1.13",
     "@types/node": "^22.17.0",
     "@types/react": "^19.1.16",
-    "@types/react-dom": "^19.1.9",
+    "@types/react-dom": "^19.2.0",
     "eslint": "^9.36.0",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
