@@ -9,7 +9,7 @@
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "prettier": "prettier app/**/*.{ts,tsx,css} --write --cache",
-    "lint": "eslint app --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --concurrency=auto --cache",
+    "lint": "TIMING=1 eslint app --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --concurrency=auto --cache",
     "prepare": "node resizeImages.js"
   },
   "dependencies": {
