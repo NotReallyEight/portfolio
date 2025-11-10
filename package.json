@@ -9,7 +9,7 @@
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "prettier": "prettier app/**/*.{ts,tsx,css} --write --cache",
-    "lint": "eslint app --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --concurrency=auto --cache",
+    "lint": "TIMING=1 eslint app --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --concurrency=auto --cache",
     "prepare": "node resizeImages.js"
   },
   "dependencies": {
@@ -36,7 +36,7 @@
     "@types/node": "^24.9.2",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
-    "eslint": "^9.38.0",
+    "eslint": "^9.39.0",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
