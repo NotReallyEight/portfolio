@@ -128,7 +128,7 @@ export default function Home() {
               </div>
               <div className="font-regular text-center text-base font-light lg:text-left lg:text-xl">
                 Hi, I&apos;m Antonio Wang — I write code by day and chase light
-                with a camera by… also day. I&apos;m 18 and obsessed with
+                with a camera by… also day. I&apos;m 19 and obsessed with
                 building things that work and look good. When I&apos;m not
                 coding, I&apos;m probably out framing strangers like characters
                 in a story — freezing time at 1/160th of a second, one shot at a
