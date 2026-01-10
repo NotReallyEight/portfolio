@@ -1,15 +1,16 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 import sharp from "sharp";
+import process from "node:process";
 
 const publicDir = path.resolve("public");
-const outputBaseDir = path.resolve("public/optimized"); // <--- updated here
+const outputBaseDir = path.resolve("public/optimized");
 
-const maxWidth = 1280; // max width of resized images
+const maxWidth = 1280; // Max width of resized images
 
-function isDirectory(source) {
+const isDirectory = (source) => {
   return fs.lstatSync(source).isDirectory();
-}
+};
 
 const projectFolders = fs
   .readdirSync(publicDir)
@@ -41,7 +42,10 @@ for (const projectFolder of projectFolders) {
         .webp({ quality: 75 })
         .toFile(outputPath)
         .then(() => {
-          console.log(`✅ Resized and optimized ${projectId}/${file}`);
+          process.stdout.clearLine();
+          process.stdout.write(
+            `\r✅ Resized and optimized ${projectId}/${file}`
+          );
         })
         .catch((err) => {
           console.error(`❌ Error processing ${projectId}/${file}:`, err);
