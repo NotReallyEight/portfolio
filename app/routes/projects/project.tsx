@@ -1,6 +1,7 @@
 import Navbar from "~/components/Navbar";
 import type { Route } from "./+types/project";
 import Footer from "~/components/Footer";
+import { Activity } from "react";
 
 type ManifestJson = {
   [key: string]: ManifestProject;
@@ -11,7 +12,7 @@ type ManifestProject = {
   name: string;
   description: string;
   images: string[];
-  youtubeVideo: string;
+  youtubeVideo?: string;
   galleryVisible: boolean;
 };
 
@@ -50,7 +51,9 @@ export default function Project({ loaderData }: Route.ComponentProps) {
       </div>
 
       {/* YouTube video */}
-      {loaderData["youtubeVideo"] !== "" && (
+      <Activity
+        mode={loaderData["youtubeVideo"] !== undefined ? "visible" : "hidden"}
+      >
         <iframe
           src={loaderData["youtubeVideo"]}
           title="YouTube video player"
@@ -59,7 +62,7 @@ export default function Project({ loaderData }: Route.ComponentProps) {
           allowFullScreen
           className="mx-auto my-8 aspect-video w-full p-4 lg:w-2/3 lg:p-0"
         />
-      )}
+      </Activity>
 
       {/* Image Grid */}
       <div
