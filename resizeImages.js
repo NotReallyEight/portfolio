@@ -42,7 +42,7 @@ for (const projectFolder of projectFolders) {
         .webp({ quality: 75 })
         .toFile(outputPath)
         .then(() => {
-          if (process.stdout.isTTY()) {
+          if (process.stdout) {
             process.stdout.clearLine();
             process.stdout.write(
               `\r✅ Resized and optimized ${projectId}/${file}`
