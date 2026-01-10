@@ -43,8 +43,8 @@ for (const projectFolder of projectFolders) {
         .toFile(outputPath)
         .then(() => {
           if (
-            typeof process.stdout.clearLine() === "function" &&
-            typeof process.stdout.write() === "function"
+            typeof process.stdout.clearLine === "function" &&
+            typeof process.stdout.write === "function"
           ) {
             process.stdout.clearLine();
             process.stdout.write(
