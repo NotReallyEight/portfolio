@@ -2,6 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 import readline from "readline";
+import process from "node:process";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -14,14 +15,16 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-const prompt = (question, placeholder) =>
+const prompt = (question, placeholder, defaultVal) =>
   new Promise((resolve) =>
     rl.question(question, (answer) =>
       resolve(
-        answer.trim() === ""
-          ? placeholder
+        ["", "true"].includes(answer.trim())
+          ? answer === "true"
+            ? true
+            : defaultVal
           : typeof placeholder === "boolean"
-            ? answer === "true"
+            ? false
             : answer
       )
     )
@@ -35,6 +38,14 @@ const toWebp = (filename) => {
 
 const main = async () => {
   const manifest = {};
+  const existingManifest = await fs
+    .readFile(outputFile)
+    .then(async (res) => JSON.parse(res.toString()))
+    .catch((err) =>
+      console.log("No existing image manifest found. Skipping...")
+    );
+
+  console.log(typeof existingManifest);
 
   const dirs = await fs.readdir(publicDir, { withFileTypes: true });
 
@@ -46,9 +57,23 @@ const main = async () => {
     const files = await fs.readdir(fullPath);
     const images = files.filter(isImage).map(toWebp);
 
-    const name = await prompt(`Project "${id}" name: `);
-    const description = await prompt(`Project "${id}" description: `);
-    const youtubeVideo = await prompt(`Project "${id}" YouTube video URL: `);
+    const existingCurrentManifest =
+      existingManifest !== undefined ? existingManifest[id] : null;
+    const name = await prompt(
+      `Project "${id}" name\nDefault: ${existingCurrentManifest?.name ?? ""}\n`,
+      undefined,
+      existingCurrentManifest?.name
+    );
+    const description = await prompt(
+      `Project "${id}" description\nDefault: ${existingCurrentManifest?.description ?? ""}\n`,
+      undefined,
+      existingCurrentManifest?.description
+    );
+    const youtubeVideo = await prompt(
+      `Project "${id}" YouTube video URL\nDefault: ${existingCurrentManifest?.youtubeVideo ?? ""}\n`,
+      undefined,
+      existingCurrentManifest?.youtubeVideo
+    );
     const galleryVisible = await prompt(
       `Should project "${id}"'s gallery be visible? `,
       true
