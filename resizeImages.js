@@ -42,10 +42,12 @@ for (const projectFolder of projectFolders) {
         .webp({ quality: 75 })
         .toFile(outputPath)
         .then(() => {
-          process.stdout.clearLine();
-          process.stdout.write(
-            `\r✅ Resized and optimized ${projectId}/${file}`
-          );
+          if (process.stdout.isTTY()) {
+            process.stdout.clearLine();
+            process.stdout.write(
+              `\r✅ Resized and optimized ${projectId}/${file}`
+            );
+          }
         })
         .catch((err) => {
           console.error(`❌ Error processing ${projectId}/${file}:`, err);
