@@ -10,6 +10,11 @@ let projects: {
   isDark?: boolean;
 }[] = [
   {
+    name: "Street Photography \\\\ 2025",
+    imageUrl: "/optimized/street-photography-2025/20251130_225209.webp",
+    redirectLink: "/projects/street-photography-2025",
+  },
+  {
     name: "Viaggio Liguria Costa Azzurra \\\\ 2025",
     imageUrl: "/optimized/gita-liguria-costa-azzurra-2025/J55C4902.webp",
     redirectLink: "/projects/gita-liguria-costa-azzurra-2025",
@@ -33,6 +38,11 @@ let projects: {
     name: "Napoli Street Photography \\\\ 2025",
     imageUrl: "/optimized/napoli-street-2025/7Q5A5091.webp",
     redirectLink: "/projects/napoli-street-2025",
+  },
+  {
+    name: "Street Photography \\\\ 2024",
+    imageUrl: "/optimized/street-photography-2024/20240213_171300.webp",
+    redirectLink: "/projects/street-photography-2024",
   },
   {
     name: "Erebus - Discord API Wrapper \\\\ 2021",
