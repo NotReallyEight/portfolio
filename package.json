@@ -19,7 +19,7 @@
     "@fontsource/titan-one": "^5.2.8",
     "@gsap/react": "^2.1.2",
     "@react-router/node": "^7.7.1",
-    "@react-router/serve": "^7.7.1",
+    "@react-router/serve": "^7.12.0",
     "gsap": "^3.14.2",
     "isbot": "^5.1.32",
     "react": "^19.2.1",
