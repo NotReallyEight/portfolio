@@ -4,13 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "react-router build",
+    "build": "node resizeImages.js && react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "prettier": "prettier app/**/*.{ts,tsx,css} --write --cache",
-    "lint": "TIMING=1 eslint app --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --concurrency=auto --cache",
-    "prepare": "node resizeImages.js"
+    "lint": "TIMING=1 eslint app --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --concurrency=auto --cache"
   },
   "dependencies": {
     "@fontsource/pinyon-script": "^5.2.8",
