@@ -2,6 +2,7 @@ import Navbar from "~/components/Navbar";
 import type { Route } from "./+types/project";
 import Footer from "~/components/Footer";
 import { Activity } from "react";
+import { CDN_BASE_URL } from "config";
 
 type ManifestJson = {
   [key: string]: ManifestProject;
@@ -69,7 +70,7 @@ export default function Project({ loaderData }: Route.ComponentProps) {
         className={`columns-2 gap-4 mb-4 space-y-4 px-4 md:columns-3 lg:columns-4 ${loaderData["galleryVisible"] ? "" : "hidden"}`}
       >
         {loaderData.images.map((image) => {
-          const src = `/optimized/${loaderData.id}/${image}`;
+          const src = `${CDN_BASE_URL}/Portfolio/Projects/${loaderData.id}/${image}`;
 
           return (
             <a

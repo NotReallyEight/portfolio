@@ -2,6 +2,7 @@ import Navbar from "~/components/Navbar";
 import { FiChevronsDown } from "react-icons/fi";
 import ProjectCard from "~/components/ProjectCard";
 import Footer from "~/components/Footer";
+import { OPTIMISED_CDN_IMAGE_BASE_URL } from "config";
 
 let projects: {
   name: string;
@@ -11,17 +12,17 @@ let projects: {
 }[] = [
   {
     name: "Street Photography \\\\ 2025",
-    imageUrl: "/optimized/street-photography-2025/20251130_225209.webp",
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/AdobeLightroom/2025/11/20251130_225209.jpg`,
     redirectLink: "/projects/street-photography-2025",
   },
   {
     name: "Viaggio Liguria Costa Azzurra \\\\ 2025",
-    imageUrl: "/optimized/gita-liguria-costa-azzurra-2025/J55C4902.webp",
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/AdobeLightroom/2025/03/J55C4902.jpg`,
     redirectLink: "/projects/gita-liguria-costa-azzurra-2025",
   },
   {
     name: "Salerno Street Photography \\\\ 2025",
-    imageUrl: "/optimized/salerno-street-photography-2025/J55C4296.webp",
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/AdobeLightroom/2025/03/J55C4296.jpg`,
     redirectLink: "/projects/salerno-street-photography-2025",
   },
   {
@@ -31,17 +32,17 @@ let projects: {
   },
   {
     name: "Agropoli Street Photography \\\\ 2025",
-    imageUrl: "/optimized/agropoli-street-2025/_DSC0001.webp",
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/AdobeLightroom/2025/04/_DSC0001.jpg`,
     redirectLink: "/projects/agropoli-street-2025",
   },
   {
     name: "Napoli Street Photography \\\\ 2025",
-    imageUrl: "/optimized/napoli-street-2025/7Q5A5091.webp",
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/AdobeLightroom/2025/04/7Q5A5091.jpg`,
     redirectLink: "/projects/napoli-street-2025",
   },
   {
     name: "Street Photography \\\\ 2024",
-    imageUrl: "/optimized/street-photography-2024/20240213_171300.webp",
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/AdobeLightroom/2024/02/20240213_171300.jpg`,
     redirectLink: "/projects/street-photography-2024",
   },
   {
@@ -80,7 +81,7 @@ projects = projects.map(
 export default function Home() {
   return (
     <div className="relative h-screen">
-      <div className="absolute inset-0 bg-[url(/optimized/gita-liguria-costa-azzurra-2025/J55C4804.webp)] bg-cover bg-center opacity-25"></div>
+      <div className="absolute inset-0 bg-[url(https://cdn.antoniowang.dev/cdn-cgi/image/width=1400,quality=80,format=auto/Pictures/AdobeLightroom/2025/03/J55C4804.jpg)] bg-cover bg-center opacity-25"></div>
       <div className="relative flex h-screen flex-col">
         <Navbar />
 
@@ -127,7 +128,7 @@ export default function Home() {
             <div className="h-full w-full overflow-hidden">
               <img
                 alt="Antonio Wang"
-                src="/about-me-image.jpg"
+                src={`${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/Other/2024/09/18 Antonio-44.jpg`}
                 className="h-full w-full object-cover"
                 loading="lazy"
               ></img>
