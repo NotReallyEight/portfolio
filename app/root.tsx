@@ -22,7 +22,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           name="description"
           content="Portfolio of Antonio Wang - a passionate developer and street photographer. Coding by passion, capturing the streets by instinct."
         />
-        <link rel="canonical" href="https://notreallyeight.dev" />
+        <link rel="canonical" href="https://antoniowang.dev" />
         <meta name="robots" content="index, follow" />
 
         {/* Open Graph (Facebook, LinkedIn, Discord, etc.) */}
@@ -31,7 +31,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           property="og:description"
           content="Portfolio of Antonio Wang - a passionate developer and street photographer. Coding by passion, capturing the streets by instinct."
         />
-        <meta property="og:url" content="https://notreallyeight.dev" />
+        <meta property="og:url" content="https://antoniowang.dev" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card */}
