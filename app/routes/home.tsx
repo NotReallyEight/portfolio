@@ -11,6 +11,11 @@ let projects: {
   isDark?: boolean;
 }[] = [
   {
+    name: "China Street Photography \\\\ 2026",
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/AdobeLightroom/2025/11/20251130_225209.jpg`,
+    redirectLink: "/projects/china-street-photography-2026",
+  },
+  {
     name: "Street Photography \\\\ 2025",
     imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/AdobeLightroom/2025/11/20251130_225209.jpg`,
     redirectLink: "/projects/street-photography-2025",
