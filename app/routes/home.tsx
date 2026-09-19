@@ -11,18 +11,33 @@ let projects: {
   isDark?: boolean;
 }[] = [
   {
+    name: "TRANSMISSION - 2023 \\\\ 2026",
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Portfolio/Projects/transmission-2023/IMG-20260821-WA0000.webp`,
+    redirectLink: "/projects/transmission-2023",
+  },
+  {
+    name: "HirpiniaFilmLab \\\\ 2026",
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Portfolio/Projects/hirpinia-film-lab-2026/IMG_5583.webp`,
+    redirectLink: "/projects/hirpinia-film-lab-2026",
+  },
+  {
+    name: "China Street Photography \\\\ 2026",
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Portfolio/Projects/china-street-photography-2026/20260210_164554.webp`,
+    redirectLink: "/projects/china-street-photography-2026",
+  },
+  {
     name: "Street Photography \\\\ 2025",
-    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/AdobeLightroom/2025/11/20251130_225209.jpg`,
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Portfolio/Projects/street-photography-2025/20251130_225209.webp`,
     redirectLink: "/projects/street-photography-2025",
   },
   {
     name: "Viaggio Liguria Costa Azzurra \\\\ 2025",
-    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/AdobeLightroom/2025/03/J55C4902.jpg`,
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Portfolio/Projects/gita-liguria-costa-azzurra-2025/J55C4902.webp`,
     redirectLink: "/projects/gita-liguria-costa-azzurra-2025",
   },
   {
     name: "Salerno Street Photography \\\\ 2025",
-    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/AdobeLightroom/2025/03/J55C4296.jpg`,
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Portfolio/Projects/salerno-street-photography-2025/J55C4296.webp`,
     redirectLink: "/projects/salerno-street-photography-2025",
   },
   {
@@ -32,17 +47,17 @@ let projects: {
   },
   {
     name: "Agropoli Street Photography \\\\ 2025",
-    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/AdobeLightroom/2025/04/_DSC0001.jpg`,
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Portfolio/Projects/agropoli-street-2025/_DSC0001.webp`,
     redirectLink: "/projects/agropoli-street-2025",
   },
   {
     name: "Napoli Street Photography \\\\ 2025",
-    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/AdobeLightroom/2025/04/7Q5A5091.jpg`,
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Portfolio/Projects/napoli-street-2025/7Q5A5091.webp`,
     redirectLink: "/projects/napoli-street-2025",
   },
   {
     name: "Street Photography \\\\ 2024",
-    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Pictures/AdobeLightroom/2024/02/20240213_171300.jpg`,
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Portfolio/Projects/street-photography-2024/20240213_171300.webp`,
     redirectLink: "/projects/street-photography-2024",
   },
   {
