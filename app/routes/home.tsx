@@ -11,6 +11,11 @@ let projects: {
   isDark?: boolean;
 }[] = [
   {
+    name: "TRANSMISSION - 2023 \\\\ 2026",
+    imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Portfolio/Projects/transmission-2023/IMG-20260821-WA0000.webp`,
+    redirectLink: "/projects/transmission-2023",
+  },
+  {
     name: "HirpiniaFilmLab \\\\ 2026",
     imageUrl: `${OPTIMISED_CDN_IMAGE_BASE_URL}/Portfolio/Projects/hirpinia-film-lab-2026/IMG_5583.webp`,
     redirectLink: "/projects/hirpinia-film-lab-2026",
