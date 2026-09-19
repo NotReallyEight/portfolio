@@ -252,13 +252,13 @@ async function main() {
   if (flags.prune) console.log("   pruning entries missing from source");
   if (flags.yes) console.log("   non-interactive: new projects get default metadata");
 
-  const existingManifest = await fs
-    .readFile(outputFile, "utf-8")
-    .then((raw) => JSON.parse(raw))
-    .catch(() => {
-      console.log("No existing imagesManifest.json found — starting fresh.");
-      return {};
-    });
+  let existingManifest = {};
+  try {
+    existingManifest = JSON.parse(await fs.readFile(outputFile, "utf-8"));
+  } catch (err) {
+    if (err.code !== "ENOENT") throw err;
+    console.log("No existing imagesManifest.json found — starting fresh.");
+  }
   log(`   existing manifest: ${Object.keys(existingManifest).length} project(s)`);
 
   log(`\n🔍 Listing images from ${flags.source === "r2" ? flags.remote : publicDir} ...`);
