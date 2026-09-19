@@ -352,7 +352,7 @@ async function main() {
     return;
   }
 
-  await fs.writeFile(backupFile, before).catch(() => {});
+  await fs.writeFile(backupFile, before);
   await fs.writeFile(outputFile, after + "\n");
   console.log(`✅ Manifest written to ${outputFile}`);
   console.log(`   (previous version backed up to ${path.basename(backupFile)})`);
