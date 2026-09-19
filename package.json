@@ -34,7 +34,7 @@
     "@prettier/plugin-oxc": "^0.2.3",
     "@react-router/dev": "^7.14.2",
     "@tailwindcss/vite": "^4.3.3",
-    "@types/node": "^24.12.2",
+    "@types/node": "^24.13.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "eslint": "^9.39.2",
